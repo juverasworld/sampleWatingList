@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+/* @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Inter Regular'), local('Inter-Regular'), url('/font/inter/Inter-Regular.ttf') format('ttf');
+} */
+
+
+@layer utilities {
+  @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Hide scrollbars */
+.containers {
+  overflow: auto; /* or overflow-x, overflow-y based on your needs */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* For Chrome, Edge, and Safari */
+.containers::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("https://db.onlinewebfonts.com/t/4a29af3f473e809703484e9092edacf7.eot");
+  src: url("https://db.onlinewebfonts.com/t/4a29af3f473e809703484e9092edacf7.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/4a29af3f473e809703484e9092edacf7.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/4a29af3f473e809703484e9092edacf7.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/4a29af3f473e809703484e9092edacf7.ttf")format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeueBold.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.PhoneInputCountry {
+  /* border: 1px solid pink; */
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  height: 64px;
+  object-fit: contain;
+}
+
+input {
+  border: none;
+}
+
+.PhoneInputInput {
+  border: 1px solid white;
+  background-color:white;
+  /* Set initial border to white */
+  outline: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  height: 64px;
+
+
+  /* Remove default focus outline */
+  /* padding: 8px; */
+  /* Adjust padding as needed */
+}
+
+.PhoneInputInput:focus {
+  border-color: white;
+  /* Set border to white on focus */
+}
+
+.custom-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDIuNUM3LjA3MSAyLjUgMi41IDcuMDcxIDIuNSAxMkMyLjUgMTYuOTI5IDcuMDcxIDIxLjUgMTIgMjEuNUMxNi45MjkgMjEuNSAyMS41IDE2LjkyOSAyMS41IDEyQzIxLjUgNy4wNzEgMTYuOTI5IDIuNSAxMiAyLjVaTTEyIDJDMTYuOTcwMiAyIDE5IDIuMDI5NCAxOSAxMkMxOSAyMS45NzAzIDE2Ljk3MDIgMjMgMTIgMjNDNy4wMjk3OCAyMyA1IDIzLjAyOTQgNSAxMkM1IDIuMDI5NDIgNy4wMjk3OCAyIDEyIDJaTTEwLjk0NyAxNC44OTVDMTAuNTk2IDE1LjI0NSAxMCAxNC45MDMgMTAgMTQuMzAwNUMxMCAxMy42OTUgMTAuNTk2IDEzLjM1NSAxMC45NDcgMTMuNzA1TDExLjkwNCAxNC42MzNMMTQuNjQxIDExLjg5NEMxNC45OTIgMTEuNTQzIDE1LjU5NiAxMS41NDMgMTUuOTQ3IDExLjg5QzE2LjI5OCAxMi4yNDMgMTYuMjk4IDEyLjg0NyAxNS45NDcgMTMuMTk4TDEyLjk0NyAxNi4xOThDMTEuNjk4IDE3LjQ0NyA5LjkxNTcgMTcuNDQ3IDguNjY2NyAxNi4xOThMNi4zOTM0IDE0LjM2MUM2LjA0MzMgMTQuMDEgNi4wNDMzIDEzLjQwNiA2LjM5MzQgMTMuMDU2QzYuNzQzNCAxMi43MDUgNy4zNDcyIDEyLjcwNSA3LjY5NzIgMTMuMDU2TDEwLjk0NyAxNi4zMDZMTEuOTA0IDE1LjM1M0wxMC45NDcgMTQuODk1WiIgZmlsbD0iI0YwMDAwMCIvPgo8L3N2Zz4=');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 40px;
+}
+
+.custom-dropdown option:checked {
+  background-color: #f0f0f0;
+  color: #000;
+}

@@ -1854,7 +1854,7 @@ export default function Home() {
               </p>
               <p className="text-[#6A6A6A]  font-[500] text-[16px] leading-[24px] mt-7">
                 <button
-                  className="bg-[#fff] text-[17px] lg:w-[300px] h-[55px] w-full py-4   text-[#000]   px-4  font-[500] rounded-[12px]  leading-[23px] font-helvetica shadow-md hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105"
+                  className="bg-[#fff] text-[17px] lg:w-[350px] h-[55px] w-full py-4   text-[#000]   px-4  font-[500] rounded-[12px]  leading-[23px] font-helvetica shadow-md hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105"
                   onClick={toggleOverlays}
                 >
                   Click Here To Join Creators Waitlist
